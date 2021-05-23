@@ -12,7 +12,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     // final dumyData = List.generate(20, (index) => CatalogModels. );
-    final dumyData = List.generate(20, (index) => CatalogModels().products[0]);
+ //   final dumyData = List.generate(20, (index) => CatalogModels().products[0]);
+
     return Scaffold(
       appBar: AppBar(
         title: Center(
@@ -22,10 +23,9 @@ class _HomePageState extends State<HomePage> {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView.builder(
-            itemCount: dumyData.length,
             itemBuilder: (context, index) {
               return ItemWidget(
-                item: dumyData[index]);
+                item: Item() );
             }),
       ),
       drawer: MyDrawer(),

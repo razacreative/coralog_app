@@ -6,14 +6,14 @@ import 'package:flutter_catalog/utills/my_routes.dart';
 void main() {
   runApp(MyApp());
 }
-
+// git push --set-upstream origin day6
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    //  initialRoute: '/Home',
+   //  initialRoute: '/home',
       routes: {
-        '/': (context) => LoginPage(),
+        '/': (context) => HomePage(),
          MyRoutes.loginRoutes: (context) => LoginPage(),
          MyRoutes.homeRoutes: (context) => HomePage(),
       },
@@ -21,6 +21,9 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       darkTheme: ThemeData(
         brightness: Brightness.light,
+      ),
+       theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
       ),
       //  home: HomePage(),
     );

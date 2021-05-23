@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/widgets/drawer.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -15,7 +16,7 @@ class _HomePageState extends State<HomePage> {
           child: Text('Flutter 30 days By Azhari pedia'),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }

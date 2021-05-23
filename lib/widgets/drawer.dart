@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key key}) : super(key: key);
-
+  final networkImage =
+      'https://images.unsplash.com/photo-1611362487355-757f215bb5ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80';
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -16,7 +17,9 @@ class MyDrawer extends StatelessWidget {
                 margin: EdgeInsets.zero,
                 accountName: Text('Azhari Pedia'),
                 accountEmail: Text('azharipedia@gmail.com'),
-                currentAccountPicture: CircleAvatar(),
+                currentAccountPicture: CircleAvatar(
+                  backgroundImage: NetworkImage(networkImage),
+                ),
                 //   currentAccountPicture: Image.asset('assets/pro_2.png'),
               ),
             ),

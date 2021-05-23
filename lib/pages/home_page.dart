@@ -10,7 +10,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Center(child: Text('Catalog App'))),
+      appBar: AppBar(title: Center(child: Text('Catalog App'),),),
       body: Container(
         child: Center(
           child: Text('Flutter 30 days By Azhari pedia'),
